@@ -32,8 +32,9 @@ group :test do
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
 end
+
 group :production do
-  gem 'pg', '0.12.2'
+  gem "pg", "~> 0.13.2"
 end
 
 # To use ActiveModel has_secure_password
