@@ -10,6 +10,7 @@ group :development do
   gem 'guard-rspec', '0.5.5'
 end
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -31,9 +32,11 @@ group :test do
   gem 'spork', '0.9.0'
 end
 
+
 group :production do
   gem "pg", "~> 0.13.2"
 end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
