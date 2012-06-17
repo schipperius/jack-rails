@@ -1,4 +1,5 @@
 JackRails::Application.routes.draw do
+
   devise_for :admins
 
   resources :images
@@ -8,7 +9,7 @@ JackRails::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
-  root :to => 'articles#index'
+  root :to => 'home#index'
   
 
   # Sample of regular route:
