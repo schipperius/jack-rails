@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Article:</b>
+  <%= @article.article_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @article.position %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @article.title %>
+</p>
+
+<p>
+  <b>Intro:</b>
+  <%= @article.intro %>
+</p>
+
+<p>
+  <b>Sec1:</b>
+  <%= @article.sec1 %>
+</p>
+
+<p>
+  <b>Sec2:</b>
+  <%= @article.sec2 %>
+</p>
+
+<p>
+  <b>Sec3:</b>
+  <%= @article.sec3 %>
+</p>
+
+<p>
+  <b>Footnotes:</b>
+  <%= @article.footnotes %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%= @article.published_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

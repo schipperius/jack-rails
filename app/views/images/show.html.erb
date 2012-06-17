@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Image:</b>
+  <%= @image.image_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @image.title %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @image.lat %>
+</p>
+
+<p>
+  <b>Lng:</b>
+  <%= @image.lng %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @image.title %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @image.caption %>
+</p>
+
+<p>
+  <b>Cite:</b>
+  <%= @image.cite %>
+</p>
+
+<p>
+  <b>Footnote:</b>
+  <%= @image.footnote %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

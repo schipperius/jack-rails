@@ -3,6 +3,11 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.6'
 gem 'jquery-rails', '2.0.0'
 
+gem 'acts-as-taggable-on', '~> 2.3.1'
+gem "paperclip", "~> 3.1.1"
+gem "aws-sdk", "~> 1.5.4"
+gem "devise", "~> 2.1.1"
+
 
 group :development do
   gem 'sqlite3', '1.3.5'
