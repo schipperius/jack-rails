@@ -9,7 +9,7 @@ gem "aws-sdk", "~> 1.5.4"
 gem "devise", "~> 2.1.1"
 
 gem "thin", "~> 1.3.1"
-  
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -45,8 +45,6 @@ end
 
 group :production do
   gem "pg", "~> 0.13.2"
-  gem "thin", "~> 1.3.1"
-  gem "foreman", "~> 0.47.0"
 end
 
 
