@@ -63,5 +63,6 @@ module JackRails
     config.assets.initialize_on_precompile = false
     # forcing your application to not access the DB 
     # or load models when precompiling your assets.
+
   end
 end
