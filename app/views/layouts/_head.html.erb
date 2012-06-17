@@ -1,0 +1,42 @@
+<!-- Site Head
+======================================================= -->
+<head>
+
+  <title>Book of Jack</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="all" />
+  <meta name="description" content="Book of Jack: An entertaining exporation of all things Jack" />
+  <meta name="keywords" content="Jack Book" />
+  <meta name="author" content="Mark Schipper" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+  <%= favicon_link_tag 'favicon.png', :type => 'image/png' %>
+
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag 'modernizr.js' %>
+
+  <%= csrf_meta_tags %>
+
+  <!--[if lt IE 7]>
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+  <![endif]-->
+
+  <!--[if IE 7]> 
+  html class="no-js lt-ie9 lt-ie8" lang="en">
+  <![endif]-->
+
+  <!--[if IE 8]>
+  <html class="no-js lt-ie9" lang="en">
+  <![endif]-->
+
+  <!--[if gt IE 8]>
+  <!-->
+  <!--<![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>

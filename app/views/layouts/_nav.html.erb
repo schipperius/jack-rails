@@ -1,0 +1,35 @@
+<!-- Site Navigation
+  ===================================================== -->
+  <nav role="navigation" id="main-nav" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <%= link_to "Browse Articles", root_path, :class => "brand" %>
+
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "About Jack", root_path %></li>
+          </ul>
+          <form role="search" class="navbar-search">
+            <input type="text" class="search-query span3" 
+            placeholder="Search Articles">
+          </form>
+          <ul class="nav">
+            <li><%= link_to "Galleries", '#' %></li>
+            <li><%= link_to "Maps", '#' %></li>
+          </ul>
+          <ul class="nav pull-right">
+            <li><%= link_to "Sign In" %></li>
+            <li><%= link_to "Contact", '#' %></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>

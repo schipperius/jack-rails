@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>JackRails</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+
+<%= render 'layouts/head' %>
+
+<body id="container" class="container-fluid" onload="initialize()" data-spy="scroll" data-target=".subnav" data-offset="50">
+
+  <%= render 'layouts/nav' %>
+  <%= render 'layouts/header' %>
+
 	<%#= as per the directions with Devise gem %>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
-<%= yield %>
+  <%= yield %>
+
+  <%= render 'layouts/footer' %>
+  <%= render 'layouts/foot' %>
 
 </body>
+
 </html>
