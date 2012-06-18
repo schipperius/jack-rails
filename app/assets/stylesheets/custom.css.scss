@@ -2,60 +2,31 @@
 		Copyright (c) 2010. Schipperius. All rights reserved.
 
 ==============================================================================
-		Custom Layout 
-		- after defaults from Compass and Bootstrap have been added
-============================================================================== */
 
+
+/* Twitter Bootstrap Toolkit
+======================================================== */
+@import "variables";
 @import "bootstrap";
 
-html {
-	height: 100%;
-}
 
-body { 
-	padding: 70px 0;
-}
+/* Custom Styles
+		After defaults from Compass and Bootstrap have been added
+============================================================================== */
+@import "styles";
+@import "typography";
+@import "glyphicons";
+@import "maps";
 
-strong {
-	color: #660000;
-}
-
-.accent {
-	font-size: 1.2em;
-	font-variant: small-caps;
-	letter-spacing: .13em;
-	color: #660000;
-}
-
-.color-red {
-	font-color: #660000;
-}
-
-/* add space between last section of article and the footer */
+/* add space between last section of article and the footer
+		--- for some reason, these changes need to be in this file ---  */
 .page-footer {
   padding-top: $baseLineHeight - 1;
   margin: $baseLineHeight 0;
   border-top: 1px solid $grayLighter;
 }
 
-.about {
-	color: #660000;
-}
 
-header ul .show-pag {
-	margin-top: 5em;
-	padding-top: 5em;
-}
-
-
-/* =============================================================================
-		Google Maps
-
-========================================================================== */
-div #map_canvas {
-	width: 100%;
-	height: 480px;
-	border: 1px solid #000;
-	margin: 2em 0em;
-}
-
+/* Bootstrap Responsive styles placed at the end of this file
+======================================================== */
+@import "bootstrap-responsive";

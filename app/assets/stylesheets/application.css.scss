@@ -13,21 +13,3 @@
  *= require_self
  *= require_tree .
  */
-
-
-/* Twitter Bootstrap Toolkit
-======================================================== */
-@import "variables";
-
-
-
-/* Custom Styles
-======================================================== */
-@import "custom";
-@import "typography";
-@import "glyphicons";
-
-
-/* Bootstrap Responsive styles placed at the end of this file
-======================================================== */
-@import "bootstrap-responsive";
