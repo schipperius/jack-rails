@@ -1,4 +1,4 @@
-<!-- Site Navigation
+<!-- Site Navigation and Header
   ===================================================== -->
   <nav role="navigation" id="main-nav" class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -10,23 +10,12 @@
           <span class="icon-bar"></span>
         </a>
 
-        <%= link_to "Browse Articles", root_path, :class => "brand" %>
+        <%= link_to "Book of Jack", root_path, :class => "brand" %>
 
         <div class="nav-collapse">
           <ul class="nav">
             <li><%= link_to "About Jack", root_path %></li>
-          </ul>
-          <form role="search" class="navbar-search">
-            <input type="text" class="search-query span3" 
-            placeholder="Search Articles">
-          </form>
-          <ul class="nav">
-            <li><%= link_to "Galleries", '#' %></li>
-            <li><%= link_to "Maps", '#' %></li>
-          </ul>
-          <ul class="nav pull-right">
-            <li><%= link_to "Sign In" %></li>
-            <li><%= link_to "Contact", '#' %></li>
+            <li><%= link_to "Browse Articles", root_path %></li>
           </ul>
         </div>
 
