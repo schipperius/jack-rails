@@ -18,14 +18,6 @@
 @import "glyphicons";
 @import "maps";
 
-/* add space between last section of article and the footer
-		--- for some reason, these changes need to be in this file ---  */
-.page-footer {
-  padding-top: $baseLineHeight - 1;
-  margin: $baseLineHeight 0;
-  border-top: 1px solid $grayLighter;
-}
-
 
 /* Bootstrap Responsive styles placed at the end of this file
 ======================================================== */
