@@ -10,7 +10,8 @@ JackRails::Application.routes.draw do
   # first created -> highest priority.
   
   root :to => 'home#index'
-  
+
+  match '/articles',  :to => 'articles#index'
   
 
   # Sample of regular route:
