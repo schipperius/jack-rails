@@ -13,8 +13,8 @@ $iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
 // --------------------------------------------------
 
 // Links
-$linkColor:             #eee !default;
-$linkColorHover:        darken($linkColor, 80%) !default;
+$linkColor:             #4682B4 !default;
+$linkColorHover:        darken($linkColor, 15%) !default;
 
 // Grays
 $black:                 #000 !default;
@@ -67,7 +67,7 @@ $hrBorder:                $grayLighter !default;
 
 // Navbar
 $navbarHeight:                    40px !default;
-$navbarBackground:                #660000 !default;
+$navbarBackground:                #990000 !default;
 $navbarBackgroundHighlight:       #660000 !default;
 $navbarLinkBackgroundHover:       transparent !default;
 
