@@ -1,50 +1,51 @@
-<!-- Home Index
+<!-- Home Page Banner
   ===================================================== -->
+	<section class="row-fluid">
+		<header role="banner" id="header" class="span12"> <%#= first row with one column %>
+		 	<a class="btn span12" href="/">
+		  	<img src="assets/home/title.png" />
+	  	</a>
+		</header>
+	</section>
 
-<section class="row-fluid">
-	<header role="banner" id="header" class="span12"> <%#= first row with one column %>
-	 	<a class="btn span12" href="/">
-	  	<img src="assets/home/title.png" />
-  	</a>
-	</header>
-</section>
-		
-<section class="row-fluid"> <%#= second row first column %>
-	<ul class="thumbnails span6 page-header">
-	  <li>
-	    <div class="thumbnail">
-	      <img src="/assets/home/jack-sparrow5.jpg"
-	alt=""
-	title=""
-	width="340" height="255" />
-				<br />
-				<%= link_to "About Jack", "#", :class => "btn btn-primary btn-large" %>
-	      <sup id="fnref:1.1" class="footnote pull-right">
-	        <a href="#fn:1.1">[1]</a>
-	      </sup>
-	    </div>
-	  </li>
-	</ul>
+<!-- Home Page Navigation
+  ===================================================== -->	
+	<section id="home-nav" class="row-fluid"> <%#= second row first column %>
+		<ul class="thumbnails span6">
+		  <li>
+		    <div class="thumbnail">
+		      <img src="/assets/home/jack-sparrow5.jpg"
+		alt=""
+		title=""
+		width="340" height="255" />
+					<br />
+					<%= link_to "About Jack", "#", :class => "btn btn-primary btn-large" %>
+		      <sup id="fnref:1.1" class="footnote pull-right">
+		        <a href="#fn:1.1">[1]</a>
+		      </sup>
+		    </div>
+		  </li>
+		</ul>
 
-	<ul class="thumbnails span6 page-header">
-	  <li>
-	    <div class="thumbnail">
-	      <img src="/assets/home/vercingetorix2.jpg"
-	alt="Vercingetorix throws down his arms at the feet of Julius Caesar"
-	title="Vercingetorix throws down his arms at the feet of Julius Caesar"
-	width="340" height="255" />
-				<br />
-				<%= link_to "Browse Articles", articles_path, :class => "btn btn-primary btn-large" %>
-	      <sup id="fnref:1.2" class="footnote pull-right">
-	        <a href="#fn:1.2">[2]</a>
-	      </sup>
-	    </div>
-	  </li>
-	</ul>
-</section>
+		<ul class="thumbnails span6">
+		  <li>
+		    <div class="thumbnail">
+		      <img src="/assets/home/vercingetorix2.jpg"
+		alt="Vercingetorix throws down his arms at the feet of Julius Caesar"
+		title="Vercingetorix throws down his arms at the feet of Julius Caesar"
+		width="340" height="255" />
+					<br />
+					<%= link_to "Browse Articles", articles_path, :class => "btn btn-primary btn-large" %>
+		      <sup id="fnref:1.2" class="footnote pull-right">
+		        <a href="#fn:1.2">[2]</a>
+		      </sup>
+		    </div>
+		  </li>
+		</ul>
+	</section>
 
-
-
+	<!-- Home Page Footnotes
+	  ===================================================== -->	
 
 <section class="row-fluid"> <%#= third row with one column %>
 	<footer class="span12">

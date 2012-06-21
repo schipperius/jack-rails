@@ -16,6 +16,9 @@
 !binary "ZmxhZ3MvbmV0aGVybGFuZC5wbmc=": flags/netherland-a8756940b7a745ab029ee401ad77908b.png
 !binary "ZmxhZ3MvdWsucG5n": flags/uk-ac81cf9ac89451a9e359a91b7a38bf89.png
 !binary "ZmxhZ3MvdXMucG5n": flags/us-fc5bc76436c87df04ca02c529bb75f02.png
+!binary "aG9tZS9ib29rLWNvdmVyLmpwZw==": home/book-cover-313c48be94c876ac0e5fd1f8170575e0.jpg
+!binary "aG9tZS9ib29rLWNvdmVyMi5qcGc=": home/book-cover2-14a901aeefc100153924acf7c5cda673.jpg
+!binary "aG9tZS9ib29rLWNvdmVyMy5qcGc=": home/book-cover3-bc195593627c4c12cdc5305cdd9995b6.jpg
 !binary "aG9tZS9mYXZpY29uLnBuZw==": home/favicon-cb9c7a106a43cf64a4319c2c2e6b78cd.png
 !binary "aG9tZS9qYWNrLXNwYXJyb3c1LmpwZw==": home/jack-sparrow5-c59ffbfdd3188900fc954ee65569bc2c.jpg
 !binary "aG9tZS90aXRsZS5wbmc=": home/title-2b19d4db28539967ed0a2f1247e00bde.png
@@ -51,9 +54,9 @@
 !binary "c29jaWFsL29jdG9jYXQucG5n": social/octocat-ea238333806b06da7d8bf6753ff2cf87.png
 !binary "c29jaWFsL3JhaWxzLnBuZw==": social/rails-be8732dac73d845ac5b142c8fb5f9fb0.png
 !binary "c29jaWFsL3R3aXR0ZXIucG5n": social/twitter-8eb84a4f66e30430f7fa5e0086820ba6.png
-!binary "YXBwbGljYXRpb24uanM=": application-c2aa6ecc5ce8a55757729efab5be5104.js
+!binary "YXBwbGljYXRpb24uanM=": application-376bc0a5c5313d6df4f980d269a1c6ae.js
 !binary "bW9kZXJuaXpyLmpz": modernizr-f9157c8cb771c2e39dc9de56b3b3af6e.js
-!binary "YXBwbGljYXRpb24uY3Nz": application-190b43124506298f21f8654997ed7a7c.css
+!binary "YXBwbGljYXRpb24uY3Nz": application-752be088b3ecaf658f26917eda8adb84.css
 !binary "Z2x5cGhpY29ucy1oYWxmbGluZ3Mtd2hpdGUucG5n": glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png
 !binary "Z2x5cGhpY29ucy1oYWxmbGluZ3MucG5n": glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png
 !binary "Ym9vdHN0cmFwLmpz": bootstrap-4f51d1bcad99b785c8ec0db746f2156e.js
