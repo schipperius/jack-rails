@@ -1,77 +1,61 @@
 <!-- Home Page Layout
   ===================================================== -->
-  <article class="row-fluid">
-    <div class="span12 columns">
-		
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span12 columns">
 
-		<!-- Home Page Banner
-		  ===================================================== -->
-			<section class="row-fluid">
-				<header role="banner" id="header" class="span12 home"> <%#= first row with one column %>
-				 	<a class="btn span12" href="/">
-				  	<img src="assets/home/title.png" />
-			  	</a>
-				</header>
-			</section>
+<!-- Header
+  ===================================================== -->
+	<header role="banner" id="header" class="hidden-phone">
+	 	<a class="btn span12" href="/"><img src="assets/home/title.png" title="Home" alt="Home" /></a>
+	</header>
 
-		<!-- Home Page Navigation
-		  ===================================================== -->	
-			<section id="home-nav" class="row-fluid"> <%#= second row first column %>
-				<ul class="thumbnails span6">
-				  <li>
-				    <div class="thumbnail">
-				      <img
-								src="/assets/home/jack-sparrow5.jpg"
-								alt="Jack Sparrow"
-								title="Jack Sparrow"
-								width="340" height="255" 
-							/>
-							<br />
-							<%= link_to "About Jack", "#", :class => "pull-left btn btn-primary btn-large" %>
-				      <sup id="fnref:1.1" class="footnote pull-right">
-				        <a href="#fn:1.1">[1]</a>
-				      </sup>
-				    </div>
-				  </li>
-				</ul>
+<!-- Home Page Navigation
+  ===================================================== -->	
+	<ul id="home-nav" class="thumbnails span6">
+	  <li>
+	    <div class="thumbnail">
+	      <img src="/assets/home/jack-sparrow5.jpg" title="Pirates of the Caribbean: On Stranger Tides" alt="Pirates of the Caribbean: On Stranger Tides"  width="340" height="255" />
+	<br /><%= link_to "About Jack", "#", :class => "pull-left btn btn-primary btn-large" %>
+	      <sup id="fnref:1.1" class="footnote pull-right"><a href="#fn:1.1">[1]</a></sup>
+	    </div>
+	  </li>
+	</ul>
 
-				<ul class="thumbnails span6">
-				  <li>
-				    <div class="thumbnail">
-				      <img
-								src="/assets/home/vercingetorix2.jpg"
-								alt="Vercingetorix throws down his arms at the feet of Julius Caesar"
-								title="Vercingetorix throws down his arms at the feet of Julius Caesar"
-								width="340" height="255" 
-							/>
-							<br />
-							<%= link_to "Browse Articles", articles_path, :class => "pull-left btn btn-primary btn-large" %>
-				      <sup id="fnref:1.2" class="footnote pull-right">
-				        <a href="#fn:1.2">[2]</a>
-				      </sup>
-				    </div>
-				  </li>
-				</ul>
-			</section>
+	<ul id="home-nav" class="thumbnails span6">
+	  <li>
+	    <div class="thumbnail">
+	      <img
+					src="/assets/home/vercingetorix2.jpg"
+					alt="Vercingetorix throws down his arms at the feet of Julius Caesar"
+					title="Vercingetorix throws down his arms at the feet of Julius Caesar"
+					width="340" height="255" 
+				/>
+				<br />
+				<%= link_to "Browse Articles", articles_path, :class => "pull-left btn btn-primary btn-large" %>
+	      <sup id="fnref:1.2" class="footnote pull-right">
+	        <a href="#fn:1.2">[2]</a>
+	      </sup>
+	    </div>
+	  </li>
+	</ul>
 
-			<!-- Home Page Footnotes
-			  ===================================================== -->	
+	<!-- Home Page Footnotes
+	  ===================================================== -->	
+	<footer class="row-fluid">
+		<ol class="span12">
+		  <li id="fn:1.1">This is a cropped version of a <a href="http://en.wikipedia.org/wiki/Wikipedia:Non-free_content">non-free</a>  promotional film  poster for &ldquo;Pirates of the Caribbean: On Stranger Tides&rdquo;. The poster art copyright is believed to belong to <a href="http://en.wikipedia.org/wiki/Walt_Disney_Pictures">Walt Disney Pictures</a>, and the cover art can be viewed at <a href="http://www.impawards.com/2011/pirates_of_the_caribbean_on_stranger_tides_ver4.html" title="Pirates of the Caribbean: On Stranger Tides" target="_blank">IMP Awards</a>. On this website, the image is used for non-profit educational purposes and is believed to qualify as <a href="http://en.wikipedia.org/wiki/Fair_use">fair use</a>.
+		    <a href="#" class="arrow">&#91;<i class="icon-arrow-up"></i>&#93;</a>
+		  </li>
 
-		<section class="row-fluid"> <%#= third row with one column %>
-			<footer class="span12">
-				<ol>
-				  <li id="fn:1.1">This is an illustration believed to be in the <a href="http://en.wikipedia.org/wiki/File:Siege-alesia-vercingetorix-jules-cesar.jpg" title="Public Domain" target="_blank">public domain</a>. The poster was found on the <a href="http://pirates.wikia.com/wiki/File:JackPromotional.jpg" title="Jack Sparrow" target="_blank">Pirates of the Caribbean Wiki</a> titled &ldquo;Jack Sparrow Promotional&rdquo;, artist unknown.
-				    <a href="#" class="arrow">&#91;<i class="icon-arrow-up"></i>&#93;</a>
-				  </li>
+		  <li id="fn:1.2">This is a faithful photographic reproduction of an original two-dimensional work of art. The work of art itself and the photograph is in the 
+		    <a href="http://en.wikipedia.org/wiki/Wikipedia:Public_domain" title="Public Domain" target="_blank">public domain</a>. This 1899 painting by
+		    <a href="http://en.wikipedia.org/wiki/Lionel_Royer" title="Lionel Royer" target="_blank">Lionel Royer</a> titled &ldquo;Vercingetorix jette ses armes aux pieds de Jules César&rdquo; or, in English, &ldquo;Vercingetorix throws down his arms at the feet of Julius Caesar&rdquo; depicts the surrender of the Gallic chieftain after the Battle of Alesia &#40;52 BC&#41; and includes a number of historical inconsistencies. The painting is currently located in the <a href="http://www.lepuyenvelay.fr/culture-et-patrimoine/musee-n15.html" target="_blank" title="Musée Crozatier">Musée Crozatier</a>, a museum in Le Puy-en-Velay in the French Auvergne.
+		    <a href="#" class="arrow">&#91;<i class="icon-arrow-up"></i>&#93;</a>
+		  </li>
+		<ol>
+	</footer>
 
-				  <li id="fn:1.2">This is a faithful photographic reproduction of an original two-dimensional work of art. The work of art itself and the photograph is in the 
-				    <a href="http://en.wikipedia.org/wiki/File:Siege-alesia-vercingetorix-jules-cesar.jpg" title="Public Domain" target="_blank">public domain</a>. This 1899 painting by
-				    <a href="http://en.wikipedia.org/wiki/Lionel_Royer" title="Lionel Royer" target="_blank">Lionel Royer</a> titled &ldquo;Vercingetorix jette ses armes aux pieds de Jules César&rdquo; or, in English, &ldquo;Vercingetorix throws down his arms at the feet of Julius Caesar&rdquo; depicts the surrender of the Gallic chieftain after the Battle of Alesia &#40;52 BC&#41; and includes a number of historical inconsistencies. The painting is currently located in the <a href="http://www.lepuyenvelay.fr/culture-et-patrimoine/musee-n15.html" target="_blank" title="Musée Crozatier">Musée Crozatier</a>, a museum in Le Puy-en-Velay in the French Auvergne.
-				    <a href="#" class="arrow">&#91;<i class="icon-arrow-up"></i>&#93;</a>
-				  </li>
-				<ol>
-			</footer>
-		</section>
-
-	</div>
-</article>
+</div>
+</div>
+</div>
