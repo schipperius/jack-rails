@@ -14,16 +14,13 @@ body {
 	padding-top: 2em;
 }
 
-
 .thumbnails {
     text-align: center;
 }
 .thumbnails li {
-    width: 150px;
-    height: 100px;
-    background: red;
     float: none !important; /* to overwrite the default property on the bootstrap stylesheet */
     display: inline-block;
     *display: inline; /* ie7 support */
     zoom: 1;
 }
+
