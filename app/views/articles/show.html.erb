@@ -1,27 +1,63 @@
-<p id="notice"><%= notice %></p>
-<%#= as per the directions with Devise gem %>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<!--  Article Admin
+  ===================================================== -->
+  <ul class="nav nav-pills">
+    <li><%= link_to 'Back', articles_path %></li>
+    <li><%= link_to 'Edit', edit_article_path(@article) %></li>
+    <li><%= link_to 'Destroy', @article, 
+    confirm: 'Are you sure?', 
+    method: :delete %> </li>
+    <li><% flash.each do |name, msg| %>
+      <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+        <%= msg  %>
+      </div>
+    <% end %>
+    </li>
+  </ul>
 
-<p>
-  <b>Article:</b>
-  <%= @article.article_id %>
-</p>
+  <!-- Article
+  ======================================================= -->
+  <article class="row-fluid">
+    <div class="span12 columns">
 
-<p>
-  <b>Position:</b>
-  <%= @article.position %>
-</p>
-
-<p>
-  <b>Title:</b>
-  <%= @article.title %>
-</p>
-
-<p>
-  <b>Intro:</b>
-  <%= @article.intro %>
-</p>
+      <!-- Article Header
+      ================================================= -->
+      <header class="row-fluid span12 page-header">
+        <section class="span4 pull-left article-image">
+          <%#= raw @article.title_image %>
+					<ul class="thumbnails">
+					  <li>
+					    <div class="thumbnail">
+					      <img src="http://placehold.it/300x225" alt="" title=""
+					width="300" height="225" />
+					      <br />
+					      <sup id="fnref:1.1" class="footnote pull-right">
+					        <a href="#fn:1.1">[1]</a>
+					      </sup>
+					    </div>
+					  </li>
+					</ul>
+       	</section>
+        <div class="span8 pull-right article-text">
+          <h3 class="article-position">
+            <strong>
+              <span>#<%= @article.position %> - </span>
+              <span><%= @article.title %></span>
+            </strong>
+          </h3>
+          <h4 class="article-sub-title">
+            <%= @article.published_at.strftime('%b %d, %Y') %> |
+            <%= link_to "tag 1", root_url %> |
+            <%= link_to "tag 2", root_url %> |
+            <%= link_to "tag 3", root_url %>
+          </h4>
+          <br/>
+          <div class="article-intro">
+            <%= raw @article.intro %>
+          </div>
+        </div>
+      </header>
+    </div>
+  </article>
 
 <p>
   <b>Sec1:</b>
@@ -42,12 +78,3 @@
   <b>Footnotes:</b>
   <%= @article.footnotes %>
 </p>
-
-<p>
-  <b>Published at:</b>
-  <%= @article.published_at %>
-</p>
-
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>

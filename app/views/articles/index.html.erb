@@ -1,39 +1,55 @@
-<h1>Listing articles</h1>
+<!-- Main Article
+  ===================================================== -->
+  <section role="alertdialog" id="admin">
+    <ul class="nav">
+      <li><%= link_to 'New Article', new_article_path %></li>
+    </ul>
+  </section>
 
-<table>
-  <tr>
-    <th>Article</th>
-    <th>Position</th>
-    <th>Title</th>
-    <th>Intro</th>
-    <th>Sec1</th>
-    <th>Sec2</th>
-    <th>Sec3</th>
-    <th>Footnotes</th>
-    <th>Published at</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <article class="container-fluid">
+    <div class="row-fluid">
 
-<% @articles.each do |article| %>
-  <tr>
-    <td><%= article.article_id %></td>
-    <td><%= article.position %></td>
-    <td><%= article.title %></td>
-    <td><%= article.intro %></td>
-    <td><%= article.sec1 %></td>
-    <td><%= article.sec2 %></td>
-    <td><%= article.sec3 %></td>
-    <td><%= article.footnotes %></td>
-    <td><%= article.published_at %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+      <section role="main" class="span9 article-brief">
+        <h1 class="about"><small>Recent Articles</small></h1>
 
-<br />
+        <% @articles.each do |article| %>
+        <header class="row-fluid page-header">
 
-<%= link_to 'New Article', new_article_path %>
+          <section class="span5 pull-left">
+            <ul class="thumbnails">
+              <li>
+                <div class="thumbnail">
+									<a href="#">
+									  <img src="http://placehold.it/200x150" alt="">
+									</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="span7 pull-right article-text">
+            <h4 class="accent">
+              <span class="article-position">
+                Article #<%= article.position %> &ndash;
+              </span>
+              <span class="article-published_at">
+                <%= article.published_at.strftime('%b %d, %Y') %> &nbsp;
+              </span>
+            </h4>
+
+            <h3 class="article-title accent">
+              <%= link_to article.title, article %>
+            </h3>
+
+            <p class="article-intro">
+              <%= truncate(strip_tags(article.intro), 
+              :length => 300, :separator => ' ') %>..
+              <%= link_to 'read more', article %>
+            </p>
+          </section>
+
+        </header>
+        <% end %>
+
+    </div>
+  </article>
