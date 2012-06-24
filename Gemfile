@@ -6,11 +6,12 @@ gem 'jquery-rails', '2.0.0'
 gem "foreman", "~> 0.47.0"
 gem "thin", "~> 1.3.1"
 
+gem "devise", "~> 2.1.2"
+gem "cancan", "~> 1.6.7"
+
 gem 'acts-as-taggable-on', '~> 2.3.1'
 gem "paperclip", "~> 3.1.1"
 gem "aws-sdk", "~> 1.5.4"
-gem "devise", "~> 2.1.1"
-
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -31,7 +32,6 @@ end
 
 # Test gems on Macintosh OS X
 group :test do
-  gem 'rspec-rails', '2.10.0'
   gem "cucumber-rails", "~> 1.3.0"
   gem 'capybara', '1.1.2'
   gem "database_cleaner", "~> 0.8.0"

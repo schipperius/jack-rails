@@ -40,8 +40,8 @@ JackRails::Application.configure do
   # environments files. Here is an example of default_url_options
   # appropriate for a development environment in 
   # config/environments/development.rb:
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' } 
+
   # For some reason, RAILS_ENV=production bundle exec rake assets:precompile
   # is not precompiling modernizr and bootstrap?
   config.assets.precompile += %w( modernizr.js )
