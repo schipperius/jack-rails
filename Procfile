@@ -1,1 +1,3 @@
-web: bundle exec rails server thin -p $PORT -e $RACK_ENV
+web: bundle exec thin start -p $PORT
+local: bundle exec thin start -p 3000
+log: tail -f log/development.log

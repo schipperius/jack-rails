@@ -10,9 +10,8 @@ JackRails::Application.routes.draw do
   # first created -> highest priority.
   
   root :to => 'home#index'
-
-  match '/articles',  :to => 'articles#index'
-  
+  match '/articles',  :to => 'articles#index'  
+  match '/integrate',  :to => 'home#integrate'  
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

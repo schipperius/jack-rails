@@ -3,12 +3,13 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.6'
 gem 'jquery-rails', '2.0.0'
 
+gem "foreman", "~> 0.47.0"
+gem "thin", "~> 1.3.1"
+
 gem 'acts-as-taggable-on', '~> 2.3.1'
 gem "paperclip", "~> 3.1.1"
 gem "aws-sdk", "~> 1.5.4"
 gem "devise", "~> 2.1.1"
-
-gem "thin", "~> 1.3.1"
 
 
 group :development, :test do
@@ -23,10 +24,8 @@ end
 group :assets do
   gem 'sass-rails',   '3.2.4'
   gem "bootstrap-sass", "~> 2.0.3.1"
-
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
-  
 end
 
 
