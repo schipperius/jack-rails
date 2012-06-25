@@ -1,15 +1,15 @@
 <!-- Site Header
 ======================================================= -->
-<section class="msg-header">
-	<div class="flash-msg">
+<section class="msg-header pagination-right">
+	<p class="flash-msg">
 		<% flash.each do |name, msg| %>
 		  <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
 		    <%= msg  %>
 				<button class="close" data-dismiss="alert">×</button>
 		  </div>
 		<% end %>
-	</div>
-	<div class="login">
+	</p>
+	<p class="login">
 		<% if user_signed_in? %>
 		  Signed in as <%= current_user.email %>. Not you?
 		  <%= link_to "Sign out", destroy_user_session_path, :method => 'delete' %>
@@ -17,5 +17,5 @@
 		  <%= link_to "Sign up", new_user_registration_path %> or
 		  <%= link_to "Sign in", new_user_session_path %>
 		<% end %>
-	</div>
+	</p>
 </section>

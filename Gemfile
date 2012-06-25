@@ -8,6 +8,7 @@ gem "thin", "~> 1.3.1"
 
 gem "devise", "~> 2.1.2"
 gem "cancan", "~> 1.6.7"
+gem "rolify", "~> 3.1.0"
 
 gem 'acts-as-taggable-on', '~> 2.3.1'
 gem "paperclip", "~> 3.1.1"
