@@ -15,8 +15,26 @@ JackRails::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  # config.action_mailer.raise_delivery_errors = false
 
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  # change to false to prevent email from being sent during development
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+  
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "example.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"]
+  }
+  
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 
@@ -35,12 +53,6 @@ JackRails::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  
-  # Ensure you have defined default url options in your
-  # environments files. Here is an example of default_url_options
-  # appropriate for a development environment in 
-  # config/environments/development.rb:
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' } 
 
   # For some reason, RAILS_ENV=production bundle exec rake assets:precompile
   # is not precompiling modernizr and bootstrap?

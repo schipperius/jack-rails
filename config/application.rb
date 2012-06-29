@@ -65,6 +65,10 @@ module JackRails
     config.assets.initialize_on_precompile = false
     # forcing your application to not access the DB 
     # or load models when precompiling your assets.
+    
+    # Prevent Logging of Passwords - We don’t want passwords 
+    # written to our log file.
+    config.filter_parameters += [:password, :password_confirmation]
 
   end
 end
