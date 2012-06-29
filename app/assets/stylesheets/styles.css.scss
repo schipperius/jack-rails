@@ -23,6 +23,10 @@ body {
 	margin: 0em 0em 1em 0em;
 }
 
+#hgroup span { /* to hide h1 and h2 in the header */
+	display: none;
+} 
+
 /* Home Index Styles
 ======================================================== */
 /* to push home page images further below logo */
@@ -42,3 +46,9 @@ body {
     *display: inline; /* ie7 support */
     zoom: 1;
 }
+
+
+
+
+
+

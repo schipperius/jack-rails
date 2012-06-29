@@ -20,7 +20,7 @@
       <section class="span8 pull-right">
 				<h1 class="first">
 				  <span class="o">O</span><small><span class="firstLine">h, hello there&#033;</span> 
-				  <span class="small">I&#039;m Mark Schipper and I built this site. That&#039;s right, I not only researched and wrote the Book of Jack, I also handcrafted this here website. Designed. Developed. Deployed.<sup id="fnref:2.2" class="footnote"><a href="#fn:2.2"> [2]</a></sup></span></small></h1>
+				  <span class="small">I&#039;m Mark Schipper and I built this site. That&#039;s right, I not only researched and wrote the Book of Jack, I also handcrafted this here website. Designed. Developed. Deployed. <sup id="fnref:2.2" class="footnote"><a href="#fn:2.2">[2]</a></sup></span></small></h1>
      	</section>
     </header>
 
@@ -28,11 +28,8 @@
       <div class="tabbable">
 
         <ul class="nav nav-pills">
-          <li class="active"><a href="#1" data-toggle="tab">
+          <li id="fn:2.1" class="active"><a href="#1" data-toggle="tab">
           About</a></li>
-          <li><a href="#2" data-toggle="tab">Contact</a></li>
-          <li><a href="#3" data-toggle="tab">Colophon</a></li>
-          <li><a href="#4" data-toggle="tab">Footnotes</a></li>
         </ul>
 
         <div class="tab-content">
@@ -40,44 +37,24 @@
 		      <!-- About
 		      ================================================= -->
           <div class="tab-pane active" id="1">
-	    			<p>I live in Calgary Canada. I have worked in the eduction industry for more than twenty years in both the public and private sectors including K&#045;12 and post-secondary environments.</p>
+	    			<div class="span4 pull-left">
+							<p>I currently live in Calgary Canada. I have worked in the eduction industry for more than twenty years in both the public and private sectors including K&#045;12 and post-secondary environments.</p>
+							<p>Over the years, I have been an instructor, recruiter, marketer, and administrator.</p>
+							<p>At heart, I am an educator, having cultivated a unique perspective on &lsquo;Education as a Business&rsquo; (EaaB) - a combination of expertise in learning and development theory and practice, and sales and marketing, all with a focus on agile methodologies, continuous incremental and iterative improvement, pragmatic governance, all wrapped up in a  results-driven culture.</p>
+						</div>
 
-	    			<p>I currently manage the computer application and technology programs at University of Calgary Continuing Education. You can read more about me on <%= link_to "LinkedIn",
-	    "http://ca.linkedin.com/in/schipperius", :target => "_blank", :title => "LinkedIn" %>.</p>
+	    			<div class="span4">
+							<p>Currently I am the Program Director for the Computer Application and Technology programs at University of Calgary Continuing Education.</p>
+	 						<p>I manage about 20 instructors and staff delivering several hundred courses in class, online, synchronously and asynchronously....</p>
+						</div>
 
-	    			<p>A few years ago, I didn&rsquo;t know what an HTML tag was, I thought I should learn, so I bought Elizabeth Castro&rsquo;s HTML and CSS QuickStart book and have since read over 120 web design and development books along with countless online articles, tutorials and videocasts.</p>
+						<div class="span4 pull-right">
+							<p>A few years ago, I thought I should learn what an HTML tag is, so I bought Elizabeth Castro&rsquo;s HTML and CSS QuickStart book and have since read over 150 web design and development books along with hundreds, if not thousands, of online articles, tutorials and videocasts.</p>
+							<p>I now know what HTML is, and have learned a bit more about web design and development, which culminates in this project.</p>
+						</div>
+
           </div>
-
-		      <!-- Contact
-		      ================================================= -->
-          <div class="tab-pane" id="2">
-						<ol class="nav nav-pills">
-						  <li><a href="http://ca.linkedin.com/in/schipperius" target="_blank"><%= image_tag("social/linkedin.png", :alt => "LinkedIn", :title => "LinkedIn", :size => "30x30" ) %></a></li>
-						</ol>
-          </div>
-
-		      <!-- Colophon
-		      ================================================= -->
-          <div class="tab-pane" id="3">
-						<p class="span6">This website was handcrafted with love using HTML5, CSS3, Ruby and Rails, Postgresql. The source code is in the public domain on Github.<a href="https://github.com/schipperius/Jack" target="_blank"><%= image_tag("social/octocat.png", :alt => "Github", :title => "Github", :size => "30x30" ) %></a>
-          </div>
-
-		      <!-- Foonotes
-		      ================================================= -->
-          <div class="tab-pane" id="4">
-						<ol class="span12">
-						  <li id="fn:2.1">This image is a modified version of a <a href="http://en.wikipedia.org/wiki/Wikipedia:Non-free_content" title="Non-free Content" target="_blank">non-free</a>  promotional film  poster for &ldquo;Pirates of the Caribbean: On Stranger Tides&rdquo;. The poster art copyright is believed to belong to <a href="http://en.wikipedia.org/wiki/Walt_Disney_Pictures" target="_blank" title="Walt Disney Pictures" >Walt Disney Pictures</a>, and the cover art can be viewed in full at <a href="http://www.impawards.com/2011/pirates_of_the_caribbean_on_stranger_tides_ver4.html" title="Pirates of the Caribbean: On Stranger Tides, Promotional Poster" target="_blank">IMP Awards</a>. This image is used for non-profit educational and scholarship purposes and therefore believed to qualify as <a href="http://en.wikipedia.org/wiki/Fair_use" title="Fair Use" target="_blank">fair use</a>.
-						    <a href="#" class="arrow">&#91;<i class="icon-arrow-up"></i>&#93;</a>
-						  </li>
-
-						  <li id="fn:2.2">This is a faithful photographic reproduction of an original two-dimensional work of art. The work of art itself and the photograph is in the 
-						    <a href="http://en.wikipedia.org/wiki/Wikipedia:Public_domain" title="Public Domain" target="_blank">public domain</a>. The 1899 painting by
-						    <a href="http://en.wikipedia.org/wiki/Lionel_Royer" title="Lionel Royer, Painter" target="_blank">Lionel Royer</a> titled &ldquo;Vercingetorix jette ses armes aux pieds de Jules César&rdquo; or, in English, &ldquo;Vercingetorix throws down his arms at the feet of Julius Caesar&rdquo; depicts the surrender of the Gallic chieftain after the Battle of Alesia &#40;52 BC&#41; and includes a number of historical inconsistencies. The painting is currently located in the <a href="http://www.lepuyenvelay.fr/culture-et-patrimoine/musee-n15.html" target="_blank" title="Musée Crozatier">Musée Crozatier</a>, a museum in Le Puy-en-Velay in the French Auvergne.
-						    <a href="#" class="arrow">&#91;<i class="icon-arrow-up"></i>&#93;</a>
-						  </li>
-						</ol>
-          </div>
-        </div>
+				</div>
 
       </div>
     </section>
