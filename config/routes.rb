@@ -1,17 +1,22 @@
 JackRails::Application.routes.draw do
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
+
+  root :to => "home#index"
+
+  authenticated :user do
+    root :to => 'home#index'
+  end
 
   devise_for :users
-
+  resources :users, :only => [:show, :index]
   resources :images
   resources :articles
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-  
-  root :to => 'home#index'
   match '/articles',  :to => 'articles#index'  
   match '/integrate',  :to => 'home#integrate'  
-
+ 
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-before_filter :authenticate_user!
+
+load_and_authorize_resource
 
   # GET /articles
   # GET /articles.json
@@ -42,6 +43,7 @@ before_filter :authenticate_user!
   # POST /articles
   # POST /articles.json
   def create
+    
     @article = Article.new(params[:article])
 
     respond_to do |format|

@@ -2,9 +2,9 @@
 
 <article class="row-fluid">
   <div class="span12 columns">
-
-    <%= link_to 'Back', articles_path %>
-    <%= render 'form' %>
-
+		<% if can? :create, Article %>
+	    <%= link_to 'Back', articles_path %>
+	    <%= render 'form' %>
+		<% end %>
   </div>
 </article>

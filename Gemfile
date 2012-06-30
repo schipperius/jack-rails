@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.6'
 gem 'jquery-rails', '2.0.0'
 
-gem "foreman", "~> 0.47.0"
 gem "thin", "~> 1.3.1"
+gem "foreman", "~> 0.47.0"
 
 gem "devise", "~> 2.1.2"
 gem "cancan", "~> 1.6.7"
@@ -14,12 +14,6 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 gem "paperclip", "~> 3.1.1"
 gem "aws-sdk", "~> 1.5.4"
 
-group :development, :test do
-  gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.10.0'
-  gem 'guard-rspec', '0.5.5'
-end
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,6 +22,13 @@ group :assets do
   gem "bootstrap-sass", "~> 2.0.3.1"
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
+end
+
+
+group :development, :test do
+  gem 'sqlite3', '1.3.5'
+  gem 'rspec-rails', '2.10.0'
+  gem 'guard-rspec', '0.5.5'
 end
 
 

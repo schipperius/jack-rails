@@ -4,7 +4,9 @@
 
   <section role="alertdialog" id="admin">
     <ul class="nav">
+			<% if can? :create, Article %>
       <li><%= link_to 'New Article', new_article_path %></li>
+			<% end %>
     </ul>
   </section>
 
