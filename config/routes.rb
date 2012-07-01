@@ -9,7 +9,8 @@ JackRails::Application.routes.draw do
   end
 
   devise_for :users
-  resources :users, :only => [:show, :index]
+    resources :users, :only => [:show, :index]
+
   resources :images
   resources :articles
 

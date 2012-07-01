@@ -32,6 +32,11 @@ group :development, :test do
 end
 
 
+group :development do
+  gem 'annotate', '>=2.5.0.pre1'
+end
+
+
 # Test gems on Macintosh OS X
 group :test do
   gem "cucumber-rails", "~> 1.3.0", :require => false
@@ -42,6 +47,7 @@ group :test do
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
   gem "email_spec", "~> 1.2.1"
+  gem "factory_girl_rails", "~> 3.5.0"
 end
 
 

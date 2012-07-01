@@ -11,8 +11,8 @@
 puts 'SETTING UP DEFAULT ADMIN LOGIN'
 user = User.create! :name => 'Admin', 
 :email => 'schipperius@gmail.com', 
-:password => 'admin-jack', 
-:password_confirmation => 'admin-jack', 
+:password => 'jack-admin', 
+:password_confirmation => 'jack-admin', 
 :confirmed_at => DateTime.now
 user.toggle!(:admin)
 puts 'New admin created: ' << user.name
@@ -20,7 +20,7 @@ puts 'New admin created: ' << user.name
 puts 'SETTING UP DEFAULT USER LOGIN'
 user = User.create! :name => 'User', 
 :email => 'mschipper@shaw.ca', 
-:password => 'user-jack', 
-:password_confirmation => 'user-jack', 
+:password => 'jack-user', 
+:password_confirmation => 'jack-user', 
 :confirmed_at => DateTime.now
 puts 'New user created: ' << user.name
