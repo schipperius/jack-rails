@@ -1,4 +1,2 @@
-localhost: bundle exec thin start -p 3000
-guard: guard start
-annotate: annotate
-log: tail -f log/development.log
+localhost: thin start
+web: bundle exec rails server thin -p $PORT -e $RACK_ENV

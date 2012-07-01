@@ -23,7 +23,8 @@ body {
 	margin: 0em 0em 1em 0em;
 }
 
-#hgroup span { /* to hide h1 and h2 in the header */
+/* to hide h1 and h2 in the header */
+.hgroup { 
 	display: none;
 } 
 
