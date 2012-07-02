@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
 gem 'rails', '3.2.6'
 
 gem 'jquery-rails', '2.0.0'
@@ -13,6 +12,7 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 gem "paperclip", "~> 3.1.1"
 gem "aws-sdk", "~> 1.5.4"
 
+gem "heroku", "~> 2.28.7"
 gem "thin", "~> 1.3.1"
 gem "foreman", "~> 0.47.0"
 
@@ -27,7 +27,7 @@ end
 
 
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
+  gem 'sqlite3' # needed for taps to work with Heroku
   gem 'rspec-rails', '2.10.0'
   gem 'guard-rspec', '0.5.5'
 end
