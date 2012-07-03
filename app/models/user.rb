@@ -32,9 +32,9 @@ class User < ActiveRecord::Base
          :validatable, :confirmable
 
   # Setup accessible (or protected) attributes for your model
+  # attr_accessible :title, :body
   attr_accessible :name, :email, :password, :password_confirmation, 
   :remember_me, :confirmed_at
-  # attr_accessible :title, :body
 
   # Devise (by default) will check that the email address 
   # and password are not blank and that the email address is unique.

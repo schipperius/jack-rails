@@ -7,6 +7,10 @@ gem "bootstrap-sass", "~> 2.0.3.1"
 
 gem "devise", "~> 2.1.2"
 gem "cancan", "~> 1.6.7"
+gem "faker", "~> 1.0.1"
+
+gem "will_paginate", "~> 3.0.3"
+gem "bootstrap-will_paginate", "~> 0.0.7"
 
 gem 'acts-as-taggable-on', '~> 2.3.1'
 gem "paperclip", "~> 3.1.1"
@@ -36,7 +40,7 @@ end
 group :development do
   gem "ruby_gntp", "~> 0.3.4"
   gem "guard-livereload", "~> 0.4.2"
-  gem "growl_notify", "~> 0.0.3"
+  # gem "growl_notify", "~> 0.0.3"
   gem 'annotate', '>=2.5.0.pre1'
 end
 

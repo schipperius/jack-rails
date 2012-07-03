@@ -1,6 +1,9 @@
 <!--  Article Admin
   ===================================================== -->
 	<% title "Articles" %>
+	<hgroup class="hgroup">
+		<h1><span>Articles</span></h1>
+	</hgroup>
 
   <ul class="nav nav-pills">
 		<% if can? :create, Article %>
@@ -19,6 +22,7 @@
       ================================================= -->
       <header class="row-fluid span12 page-header">
         <section class="span4 pull-left article-image">
+
           <%#= raw @article.title_image %>
 					<ul class="thumbnails">
 					  <li>
@@ -33,7 +37,8 @@
 					  </li>
 					</ul>
        	</section>
-        <div class="span8 pull-right article-text">
+
+        <section class="span8 pull-right article-text">
           <h3 class="article-position">
             <strong>
               <span>#<%= @article.position %> - </span>
@@ -50,7 +55,13 @@
           <div class="article-intro">
             <%= raw @article.intro %>
           </div>
-        </div>
+					<br />
+	        <ul class="pull-right">
+	          <%= content_tag :li, link_to("Previous Article", @article.previous), :class => "previous btn" if @article.previous %>
+	          <%= content_tag :li, link_to("Next Article", @article.next), :class => "next btn" if !@article.last_published? && @article.next %>
+	        </ul>
+
+				</section>
       </header>
 
       <!-- Article Navigation

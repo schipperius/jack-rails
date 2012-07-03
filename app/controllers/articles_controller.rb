@@ -1,12 +1,11 @@
 class ArticlesController < ApplicationController
-
-load_and_authorize_resource
+  load_and_authorize_resource
 
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
-
+    @articles = Article.paginate :page => params[:page], :per_page => 3
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
@@ -28,6 +27,7 @@ load_and_authorize_resource
   # GET /articles/new.json
   def new
     @article = Article.new
+    @article.position = Article.maximum(:position).to_i + 1
 
     respond_to do |format|
       format.html # new.html.erb

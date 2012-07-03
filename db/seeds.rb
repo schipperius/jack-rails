@@ -18,7 +18,7 @@ user.toggle!(:admin)
 puts 'New admin created: ' << user.name
 
 puts 'SETTING UP DEFAULT USER LOGIN'
-user = User.create! :name => 'User', 
+user = User.create! :name => 'jack-user', 
 :email => 'mschipper@shaw.ca', 
 :password => 'jack-user', 
 :password_confirmation => 'jack-user', 

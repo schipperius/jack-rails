@@ -1,14 +1,15 @@
 <!-- Main Article
   ===================================================== -->
-	<% title "Browse Articles" %>
+	<% title "Articles" %>
+	<hgroup class="hgroup">
+		<h1><span>Articles</span></h1>
+	</hgroup>
 
-  <section role="alertdialog" id="admin">
-    <ul class="nav">
-			<% if can? :create, Article %>
-      <li><%= link_to 'New Article', new_article_path %></li>
-			<% end %>
-    </ul>
-  </section>
+	<ul role="alertdialog" id="admin" class="nav">
+		<% if can? :create, Article %>
+		  <li><%= link_to 'New Article', new_article_path %></li>
+		<% end %>
+	</ul>
 
   <article class="container-fluid">
     <div class="row-fluid">
@@ -53,6 +54,12 @@
 
         </header>
         <% end %>
+
+        <footer class="pagination pull-right page-header">
+          <%= will_paginate :previous_label => h("<"), 
+          :next_label => h(">") %>
+        </footer>
+			</section>
 
     </div>
   </article>

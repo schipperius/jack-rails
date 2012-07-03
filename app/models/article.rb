@@ -17,7 +17,31 @@
 #
 
 class Article < ActiveRecord::Base
-  attr_accessible :article_id, :footnotes, :intro, :position, 
-  :published_at, :sec1, :sec2, :sec3, :title
- 
+  attr_accessible :article_id, :position, :title, :intro, 
+   :sec1, :sec2, :sec3, :footnotes, :published_at
+
+  # Named Scopes
+  scope :published, lambda { where("published_at <= ?", Time.zone.now) }
+  scope :recent, order('position DESC')
+
+  def long_title
+   "#{title} - #{published_at}"
+  end
+
+  def previous
+   self.class.where("position < ?", position).order("position desc").first
+  end
+
+  def next
+   self.class.where("position > ?", position).order("position").first
+  end
+
+  def last_published?
+   self == self.class.published.last
+  end
+
+  def published?
+   published_at <= Time.zone.now
+  end
+
 end

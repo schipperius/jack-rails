@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "home view" do
+describe "home views" do
   
-  describe "index page" do
+  describe "home index page" do
     it "should have h1 content 'Book of Jack'" do
       visit '/'
       page.should have_content('Book of Jack')
@@ -15,7 +15,7 @@ describe "home view" do
     end
   end
   
-  describe "integrate page" do
+  describe "home integrate page" do
     it "should have h1 content 'Integrate'" do
       visit '/integrate'
       page.should have_content('Integrate')
