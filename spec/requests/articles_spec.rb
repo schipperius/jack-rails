@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "article views" do
+describe "Articles" do
   
   describe "article index page" do
     it "should have h1 content 'Articles'" do
